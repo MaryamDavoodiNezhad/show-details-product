@@ -1,0 +1,10 @@
+
+<div class="flex-container">
+    
+    <div class="product-box" *ngFor="let camera of cameras "><br>
+       <h3 class="detail-product text-center">{{camera.name}}</h3>
+       <span class="text-center">{{camera.id}}</span>
+       <img class="img-fluid" [src]="camera.image">
+       <button class="btn btn-primary" [routerLink]="['/products', camera.id]">Detail</button>
+    </div>
+  </div>
